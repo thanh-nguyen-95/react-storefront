@@ -6,7 +6,13 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["vercel.saleor.cloud", "img.youtube.com"],
+    domains: [
+      "vercel.saleor.cloud",
+      "img.youtube.com",
+      "media-dev-store.egany.com",
+      "media-stag-store.egany.com",
+      "media-store.egany.com",
+    ],
     formats: ["image/avif", "image/webp"],
   },
   async redirects() {
@@ -15,12 +21,12 @@ module.exports = withBundleAnalyzer({
         source: "/",
         // TODO: Investigate why constants from project cannot be imported
         // User should be redirected to the defaults defined in @lib/regions
-        destination: "/default-channel/en-US",
+        destination: "/channel-vnd/en-US",
         permanent: false,
       },
     ];
   },
   experimental: {
-    reactRoot: true
+    reactRoot: true,
   },
 });

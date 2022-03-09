@@ -8,6 +8,11 @@ export const LOCALES = [
     code: "EN_US" as LanguageCodeEnum,
     name: "American English",
   },
+  {
+    slug: "vi",
+    code: "VI" as LanguageCodeEnum,
+    name: "Vietnamese",
+  },
   { slug: "pl-PL", code: "PL_PL" as LanguageCodeEnum, name: "Polski" },
 ];
 export const DEFAULT_LOCALE = "en-US";
@@ -21,9 +26,9 @@ export interface Channel {
 }
 
 export const DEFAULT_CHANNEL: Channel = {
-  slug: "default-channel",
-  name: "United States Dollar",
-  currencyCode: "USD",
+  slug: "channel-vnd",
+  name: "Channel VND",
+  currencyCode: "VND",
 };
 
 export const CHANNELS: Channel[] = [

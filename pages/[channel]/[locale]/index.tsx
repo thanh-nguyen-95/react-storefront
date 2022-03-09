@@ -54,7 +54,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
     await apolloClient.query<HomepageBlocksQuery, HomepageBlocksQueryVariables>(
       {
         query: HomepageBlocksQueryDocument,
-        variables: { slug: "homepage", ...contextToRegionQuery(context) },
+        variables: { slug: "navbar", ...contextToRegionQuery(context) },
       }
     );
   return {
