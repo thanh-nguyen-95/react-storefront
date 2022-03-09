@@ -10,7 +10,7 @@ module.exports = withBundleAnalyzer({
       "vercel.saleor.cloud",
       "img.youtube.com",
       "media-dev-store.egany.com",
-      "media-stag-store.egany.com",
+      "media-stage-store.egany.com",
       "media-store.egany.com",
     ],
     formats: ["image/avif", "image/webp"],
